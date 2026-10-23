@@ -51,10 +51,10 @@ which is how a client tells the two apart on one machine.
 make install
 ```
 
-That builds the binary into `/usr/local/bin`, writes a **user** systemd unit and
-starts it. A user service, not a system one: it asks mutter which monitors exist,
-which needs your session bus; it pastes into your clipboard; and the pointer it
-creates belongs in your session. Root has none of those.
+That builds the binary into `~/.local/bin` by default (override with `PREFIX`),
+writes a **user** systemd unit and starts it. A user service, not a system one:
+it asks mutter which monitors exist, which needs your session bus; it pastes into
+your clipboard; and the pointer it creates belongs in your session. Root has none of those.
 
 Two things it cannot give itself:
 

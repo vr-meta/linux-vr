@@ -5,7 +5,7 @@
 
 SERVER      := linux-vr-server
 VERSION     ?= $(shell git describe --tags --always --dirty 2>/dev/null || echo dev)
-PREFIX      ?= /usr/local
+PREFIX      ?= $(HOME)/.local
 BINDIR      := $(PREFIX)/bin
 UNITDIR     := $(HOME)/.config/systemd/user
 APK         := client/app/build/outputs/apk/debug/app-debug.apk
